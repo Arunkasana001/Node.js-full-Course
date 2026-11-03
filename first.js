@@ -1,6 +1,7 @@
 console.log("KG coding is the best YT Channel.");
 
 
+const { log } = require('console');
 const fs = require('fs');
 
 
