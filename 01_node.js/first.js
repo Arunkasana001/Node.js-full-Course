@@ -11,3 +11,5 @@ fs.writeFile("output.txt" , "Writing File", (err) => {
   
   
 })
+
+console.log(removeEventListener);
