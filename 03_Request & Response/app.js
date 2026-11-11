@@ -1,14 +1,17 @@
 // const { log } = require("console");
 const http = require("http");
 
-// function requestListener(req, res){
-//   console.log(req);
 
-// }
-// http.createServer(requestListener);
+
 
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method, req.headers);
+
+  if(req.url === '/'){
+
+  }else if(req.url === '/products'){
+    
+  }
   res.setHeader("Content-Type", "text/html");
   res.write("<html>");
   res.write("<head><title>Complete Coding</title></head>");
