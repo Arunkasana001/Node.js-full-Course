@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<head><title>Complete Coding</title></head>");
-    res.write("<body><h1> Complete Node.JS Course</h1></body>");
+    res.write("<body><h1> There is no updated product</h1></body>");
     res.write("</html>");
     return res.end();
   }
