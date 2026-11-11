@@ -8,17 +8,23 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<head><title>Complete Coding</title></head>");
-    res.write("<body><h1> Complete Node.JS Course</h1></body>");
+    res.write("<body><h1> Welcome to Home</h1></body>");
     res.write("</html>");
-    res.end();
+    return res.end();
   } else if (req.url === "/products") {
+    res.setHeader("Content-Type", "text/html");
+    res.write("<html>");
+    res.write("<head><title>Complete Coding</title></head>");
+    res.write("<body><h1> Check Out our Products</h1></body>");
+    res.write("</html>");
+    return res.end();
   } else {
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<head><title>Complete Coding</title></head>");
     res.write("<body><h1> Complete Node.JS Course</h1></body>");
     res.write("</html>");
-    res.end();
+    return res.end();
   }
 
   // process.exit(); // Stops event loop
