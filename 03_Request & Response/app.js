@@ -1,23 +1,25 @@
 // const { log } = require("console");
 const http = require("http");
 
-
-
-
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method, req.headers);
 
-  if(req.url === '/'){
-
-  }else if(req.url === '/products'){
-    
+  if (req.url === "/") {
+    res.setHeader("Content-Type", "text/html");
+    res.write("<html>");
+    res.write("<head><title>Complete Coding</title></head>");
+    res.write("<body><h1> Complete Node.JS Course</h1></body>");
+    res.write("</html>");
+    res.end();
+  } else if (req.url === "/products") {
+  } else {
+    res.setHeader("Content-Type", "text/html");
+    res.write("<html>");
+    res.write("<head><title>Complete Coding</title></head>");
+    res.write("<body><h1> Complete Node.JS Course</h1></body>");
+    res.write("</html>");
+    res.end();
   }
-  res.setHeader("Content-Type", "text/html");
-  res.write("<html>");
-  res.write("<head><title>Complete Coding</title></head>");
-  res.write("<body><h1> Complete Node.JS Course</h1></body>");
-  res.write("</html>");
-  res.end();
 
   // process.exit(); // Stops event loop
 });
