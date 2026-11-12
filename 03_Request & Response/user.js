@@ -17,7 +17,8 @@ const server = http.createServer((req, res) => {
     res.write('<input  type="radio" id="male"name="gender" value="male" />');
     res.write('<label for="female">Female</label>');
     res.write(
-    
+      '<input  type="radio" id="female"  name="gender" value="female" />',
+    );
     res.write('<br><input type="submit" value="Submit"/>')
     res.write("</form>");
     res.write("</body>");
