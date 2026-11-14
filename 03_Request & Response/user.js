@@ -43,7 +43,6 @@ const server = http.createServer((req, res) => {
   // process.exit(); // Stops event loop
 });
 
-const PORT = 3001;
 
 server.listen(PORT, () => {
   console.log(`Server running on address http://localhost:${PORT}`);
